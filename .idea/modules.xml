@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/mobile/mobile.iml" filepath="$PROJECT_DIR$/mobile/mobile.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sad-assistant-datastore/sad-assistant-datastore.iml" filepath="$PROJECT_DIR$/sad-assistant-datastore/sad-assistant-datastore.iml" />
       <module fileurl="file://$PROJECT_DIR$/sad-datastore.iml" filepath="$PROJECT_DIR$/sad-datastore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobile/sad-datastore.mobile.iml" filepath="$PROJECT_DIR$/.idea/modules/mobile/sad-datastore.mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobile/sad-datastore.mobile.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mobile/sad-datastore.mobile.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobile/sad-datastore.mobile.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mobile/sad-datastore.mobile.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sad-assistant-datastore/sad-datastore.sad-assistant-datastore.iml" filepath="$PROJECT_DIR$/.idea/modules/sad-assistant-datastore/sad-datastore.sad-assistant-datastore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sad-assistant-datastore/sad-datastore.sad-assistant-datastore.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sad-assistant-datastore/sad-datastore.sad-assistant-datastore.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sad-assistant-datastore/sad-datastore.sad-assistant-datastore.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sad-assistant-datastore/sad-datastore.sad-assistant-datastore.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sad-assistant-datastore/sad-datastore.sad-assistant-datastore.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sad-assistant-datastore/sad-datastore.sad-assistant-datastore.unitTest.iml" />
     </modules>
   </component>
 </project>

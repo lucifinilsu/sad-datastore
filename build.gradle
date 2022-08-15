@@ -4,34 +4,45 @@ buildscript {
     ext.kotlin_version = 'latest.release'
     repositories {
         //maven {url "https://dl.bintray.com/lucifinilsu/maven"}
+        maven { url "https://jitpack.io" }
         google()
         jcenter()
         mavenCentral()
 
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:latest.release"
+        classpath 'com.android.tools.build:gradle:4.1.1'
+        /*classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:latest.release"
         classpath 'com.android.tools.build:gradle:3.4.2'
         classpath 'com.novoda:bintray-release:0.7.0'//0.4.0
         classpath 'org.jacoco:org.jacoco.core:0.7.5.201505241946'
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle filesclasspath
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:latest.release'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:latest.release'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:latest.release'*/
 
     }
 }
-apply from: 'https://raw.githubusercontent.com/lucifinilsu/SmartAndroidDeveloper/master/sad-project-common.gradle'
+//apply from: 'https://raw.githubusercontent.com/lucifinilsu/SmartAndroidDeveloper/master/sad-project-common.gradle'
 project.ext {
     basicApplicationId=""
     versionCode = 10
     versionName = "4.0.0"
-    versionNameSadDatastore="0.2.3"
+    versionNameSadDatastore="0.2.4"
+    buildToolsVersion = "29.0.2"
+    compileSdkVersion = 29
+    minSdkVersion = 21
+    targetSdkVersion = 29
+    abortOnLintError = false
+    checkLintRelease = false
+    useJack = false
+    abortOnLintError = false
+    javaVersion = JavaVersion.VERSION_1_8
+    isDebug=false
 }
 
 allprojects {
     repositories {
        // maven {url "https://dl.bintray.com/lucifinilsu/maven"}
+        maven { url "https://jitpack.io" }
         google()
         jcenter()
         mavenCentral()
@@ -41,4 +52,4 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-tasks.getByPath(":sad-assistant-datastore:javadoc").enabled = false
+//tasks.getByPath(":sad-assistant-datastore:javadoc").enabled = false

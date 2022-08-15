@@ -70,10 +70,10 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     /*implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"*/
 
-    api 'com.sad.core.async:sad-async:latest.release'
-    api 'com.sad.basic:sad-basic:latest.release'
+    api 'com.github.lucifinilsu:sad-async:latest.release'
+    api 'com.github.lucifinilsu:sad-basic:latest.release'
     /*testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:latest.release'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:latest.release'*/
 }
-apply from: rootProject.file('uploadbintrayJceneterScript.gradle')
+//apply from: rootProject.file('uploadbintrayJceneterScript.gradle')
