@@ -2,6 +2,7 @@ package com.sad.assistant.datastore.db;
 
 import android.database.sqlite.SQLiteDatabase;
 
+import com.sad.core.async.ISADTaskProccessListener;
 import com.sad.core.async.SADExecutor;
 import com.sad.core.async.SADHandlerAssistant;
 import com.sad.core.async.SADTaskRunnable;
@@ -95,7 +96,27 @@ public class DBWorkerImpl implements IDBWorker<DBWorkerImpl>,IDBWorker.Api{
             executor= new SADExecutor();
         }
         sadTaskSchedulerClient.executor(executor);
-        sadTaskSchedulerClient.execute(new SADTaskRunnable<R>(action.getId()) {
+        sadTaskSchedulerClient.execute(new SADTaskRunnable<R>(action.getId(), new ISADTaskProccessListener<R>() {
+            @Override
+            public void onSuccess(R r) {
+                action.onExecuteSuccess(r,db);
+                counter.getAndDecrement();
+                closeDB(action.getId());
+            }
+
+            @Override
+            public void onFail(Throwable throwable) {
+                action.onExecuteFailed(db,new Exception(throwable));
+                counter.getAndDecrement();
+                closeDB(action.getId());
+            }
+
+            @Override
+            public void onCancel() {
+                counter.getAndDecrement();
+                closeDB(action.getId());
+            }
+        }) {
             @Override
             public R doInBackground() throws Exception {
                 counter.getAndIncrement();
@@ -126,27 +147,6 @@ public class DBWorkerImpl implements IDBWorker<DBWorkerImpl>,IDBWorker.Api{
                     throw new Exception("the database '"+db.getPath()+"' or action is null !!!");
                 }
 
-            }
-
-            @Override
-            public void onSuccess(R result) {
-
-                action.onExecuteSuccess(result,db);
-                counter.getAndDecrement();
-                closeDB(action.getId());
-            }
-
-            @Override
-            public void onFail(Throwable throwable) {
-                action.onExecuteFailed(db,new Exception(throwable));
-                counter.getAndDecrement();
-                closeDB(action.getId());
-            }
-
-            @Override
-            public void onCancel() {
-                counter.getAndDecrement();
-                closeDB(action.getId());
             }
         });
         return this;

@@ -1,14 +1,15 @@
 package com.sad.assistant.datastore.db;
 
+import static com.sad.basic.utils.app.AppDirFactoryClient.IStorageLocationStrategy.StorageLocation.SDCARD;
+
 import android.content.Context;
 import android.content.ContextWrapper;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.sad.basic.utils.app.AppDirFactoryClient;
 
 import java.io.File;
-
-import static com.sad.basic.utils.app.AppDirFactoryClient.IStorageLocationStrategy.StorageLocation.SDCARD;
 
 public class DBContextCreator implements IDBContextCreator<DBContextCreator>, IDBContextCreator.Api{
     private ContextWrapper contextWrapper;

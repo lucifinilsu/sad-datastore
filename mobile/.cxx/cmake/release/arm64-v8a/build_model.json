@@ -175,7 +175,6 @@
       "project": {
         "compilerSettingsCacheFolder": "D:\\workspace\\project\\SAD\\SAD-PROJECT\\sad-datastore\\.cxx",
         "cxxFolder": "D:\\workspace\\project\\SAD\\SAD-PROJECT\\sad-datastore\\.cxx",
-        "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
@@ -199,7 +198,9 @@
     "objFolder": "D:\\workspace\\project\\SAD\\SAD-PROJECT\\sad-datastore\\mobile\\build\\intermediates\\cmake\\release\\obj",
     "variantName": "release",
     "validAbiList": [
-      "ARM64_V8A"
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86"
     ],
     "prefabDirectory": "D:\\workspace\\project\\SAD\\SAD-PROJECT\\sad-datastore\\mobile\\.cxx\\cmake\\release\\prefab",
     "prefabPackageDirectoryList": []

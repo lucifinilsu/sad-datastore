@@ -9,11 +9,11 @@
   ],
   "buildTargetsCommand": "D:\\androidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"D:\\workspace\\project\\SAD\\SAD-PROJECT\\sad-datastore\\mobile\\.cxx\\cmake\\release\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
-    "native-lib-Release-armeabi-v7a": {
-      "artifactName": "native-lib",
-      "buildCommand": "D:\\androidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\workspace\\project\\SAD\\SAD-PROJECT\\sad-datastore\\mobile\\.cxx\\cmake\\release\\armeabi-v7a\" native-lib",
+    "native-lib-mobile-datastore-Release-armeabi-v7a": {
+      "artifactName": "native-lib-mobile-datastore",
+      "buildCommand": "D:\\androidSDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\workspace\\project\\SAD\\SAD-PROJECT\\sad-datastore\\mobile\\.cxx\\cmake\\release\\armeabi-v7a\" native-lib-mobile-datastore",
       "abi": "armeabi-v7a",
-      "output": "D:\\workspace\\project\\SAD\\SAD-PROJECT\\sad-datastore\\mobile\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libnative-lib.so",
+      "output": "D:\\workspace\\project\\SAD\\SAD-PROJECT\\sad-datastore\\mobile\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libnative-lib-mobile-datastore.so",
       "runtimeFiles": []
     }
   }

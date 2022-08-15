@@ -1,0 +1,15 @@
+# ninja log v5
+2	201	682255793	build.ninja	f7fb09398531b05
+0	26	0	clean	f4c3fbcb955c68c0
+1	27	0	clean	f4c3fbcb955c68c0
+1	202	682255857	build.ninja	f7fb09398531b05
+0	512	682255857	CMakeFiles/native-lib-mobile-datastore.dir/src/main/cpp/native-lib.cpp.o	2098078b3218cd60
+513	1190	682255858	../../../../build/intermediates/cmake/release/obj/x86/libnative-lib-mobile-datastore.so	f0a7e0f80d12ad4b
+0	27	0	clean	f4c3fbcb955c68c0
+0	28	0	clean	f4c3fbcb955c68c0
+2	452	682255937	CMakeFiles/native-lib-mobile-datastore.dir/src/main/cpp/native-lib.cpp.o	2098078b3218cd60
+452	1011	682255938	../../../../build/intermediates/cmake/release/obj/x86/libnative-lib-mobile-datastore.so	f0a7e0f80d12ad4b
+0	26	0	clean	f4c3fbcb955c68c0
+0	26	0	clean	f4c3fbcb955c68c0
+2	463	682256087	CMakeFiles/native-lib-mobile-datastore.dir/src/main/cpp/native-lib.cpp.o	2098078b3218cd60
+463	1031	682256087	../../../../build/intermediates/cmake/release/obj/x86/libnative-lib-mobile-datastore.so	f0a7e0f80d12ad4b
