@@ -1,0 +1,3 @@
+D:/workspace/project/SAD/SAD-PROJECT/sad-datastore/mobile/.cxx/cmake/release/x86/CMakeFiles/native-lib-mobile-datastore.dir
+D:/workspace/project/SAD/SAD-PROJECT/sad-datastore/mobile/.cxx/cmake/release/x86/CMakeFiles/edit_cache.dir
+D:/workspace/project/SAD/SAD-PROJECT/sad-datastore/mobile/.cxx/cmake/release/x86/CMakeFiles/rebuild_cache.dir

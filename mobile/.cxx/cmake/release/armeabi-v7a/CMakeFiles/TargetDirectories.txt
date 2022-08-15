@@ -1,3 +1,0 @@
-D:/workspace/project/SAD/SAD-PROJECT/sad-datastore/mobile/.cxx/cmake/release/armeabi-v7a/CMakeFiles/native-lib-mobile-datastore.dir
-D:/workspace/project/SAD/SAD-PROJECT/sad-datastore/mobile/.cxx/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
-D:/workspace/project/SAD/SAD-PROJECT/sad-datastore/mobile/.cxx/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
