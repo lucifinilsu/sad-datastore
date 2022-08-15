@@ -92,7 +92,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation 'androidx.appcompat:appcompat:'+rootProject.ext.androidxAppCompatVersion
     /*api 'com.android.support:design:' + rootProject.ext.supportVersion
     api 'com.android.support:appcompat-v7:'+rootProject.ext.supportVersion
     api 'com.android.support:support-v4:'+ rootProject.ext.supportVersion*/

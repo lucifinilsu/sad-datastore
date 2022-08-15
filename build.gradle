@@ -21,6 +21,7 @@ buildscript {
 
     }
 }
+apply from: rootProject.file('config.gradle')
 //apply from: 'https://raw.githubusercontent.com/lucifinilsu/SmartAndroidDeveloper/master/sad-project-common.gradle'
 project.ext {
     basicApplicationId=""
