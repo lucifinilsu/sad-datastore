@@ -1,1 +1,1 @@
-include ':mobile', ':sad-assistant-datastore'
+include ':sad-assistant-datastore'

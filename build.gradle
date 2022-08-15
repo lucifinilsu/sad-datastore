@@ -27,7 +27,7 @@ project.ext {
     basicApplicationId=""
     versionCode = 10
     versionName = "4.0.0"
-    versionNameSadDatastore="0.2.5-RC3"
+    versionNameSadDatastore="0.2.5-RC4"
     buildToolsVersion = "29.0.2"
     compileSdkVersion = 29
     minSdkVersion = 21
