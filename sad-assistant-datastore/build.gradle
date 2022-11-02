@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android-extensions'*/
 //apply plugin: 'com.novoda.bintray-release'
 plugins{
     id 'com.android.library'
-    id 'maven-publish'
+    //id 'maven-publish'
 }
 group='com.sad.assistant.datastore'
 android {
@@ -70,7 +70,7 @@ configurations.all {
     resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
     resolutionStrategy.cacheDynamicVersionsFor 0, 'seconds'
 }
-afterEvaluate {
+/*afterEvaluate {
     publishing {
         publications {
             // Creates a Maven publication called "release".
@@ -84,23 +84,25 @@ afterEvaluate {
                 version = rootProject.ext.versionNameSadDatastore
             }
             // Creates a Maven publication called “debug”.
-            /*debug(MavenPublication) {
+            *//*debug(MavenPublication) {
                 // Applies the component for the debug build variant.
                 from components.debug
 
                 groupId = 'com.example.MyLibrary'
                 artifactId = 'final-debug'
                 version = '1.0'
-            }*/
+            }*//*
         }
     }
-}
+}*/
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     /*implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"*/
 
-    api 'com.github.lucifinilsu:sad-async:latest.release'
-    api 'com.github.lucifinilsu:sad-basic:latest.release'
+    api 'com.github.lucifinilsu:sad-async:0.2.6'
+    //api "com.github.lucifinilsu.sad-basic:sad-basic-test:0.3.6-alpha1"
+
+    //api 'com.github.lucifinilsu:sad-basic:latest.release'
     /*testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:latest.release'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:latest.release'*/
