@@ -106,7 +106,7 @@ dependencies {
     api 'com.github.lucifinilsu:sad-async:0.2.6'
     //api "com.github.lucifinilsu.sad-basic:sad-basic-test:0.3.6-alpha1"
 
-    //api 'com.github.lucifinilsu:sad-basic:latest.release'
+    api 'com.github.lucifinilsu:sad-basic:0.4.3'
     /*testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:latest.release'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:latest.release'*/
